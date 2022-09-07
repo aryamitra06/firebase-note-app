@@ -28,5 +28,8 @@ export const deleteNote = (id) => {
 
 //fetch all notes
 export const fetchNotes = () => {
-    return getDocs(notesCollectionRef);
+    try {
+        return getDocs(notesCollectionRef);
+    } catch (error) {
+    }
 }
