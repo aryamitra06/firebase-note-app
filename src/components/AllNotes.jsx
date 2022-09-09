@@ -23,8 +23,8 @@ export default function AllNotes({ toggle, setToggle }) {
         loading && (
           <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
             <div className="d-flex align-items-center gap-2">
-              <div class="spinner-border" role="status">
-                <span class="visually-hidden">Loading...</span>
+              <div className="spinner-border" role="status">
+                <span className="visually-hidden">Loading...</span>
               </div>
               <h5 className='p-0 m-0'>Loading...</h5>
             </div>
@@ -34,7 +34,7 @@ export default function AllNotes({ toggle, setToggle }) {
       {
         notes?.docs?.length === 0 && !loading && (
           <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
-            <div class="alert alert-primary" role="alert">
+            <div className="alert alert-primary" role="alert">
               No Notes Found
             </div>
           </div>
